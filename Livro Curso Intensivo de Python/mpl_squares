@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+input_values = [1, 2, 3, 4, 5]
+squares = [1, 4, 9, 16, 25]
+plt.plot(input_values, squares, linewidth=5) #linewidth controla a espessura da linha gerada por plot()
+
+# Define o título do gráfico e nomeia os eixos
+plt.title("Square Numbers", fontsize=24) #title define um título para o gráfico
+plt.xlabel("Value", fontsize=14) #fontsize controla o tamanho do texto no gráfico
+plt.ylabel("Square of Value", fontsize=14) #xlabel e xlabel permitem definir um título para cada um dos eixos
+
+#Define o tamanho dos rótulos das marcações
+plt.tick_params(axis='both', labelsize=14) #tick_params estiliza as marcações nos eixos.
+
+plt.show()
